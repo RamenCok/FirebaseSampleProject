@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E00871128DB5A2600A51478 /* shoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0E00871028DB5A2600A51478 /* shoe.scn */; };
 		0E00871428DB5A6600A51478 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00871328DB5A6600A51478 /* Home.swift */; };
 		0E00871628DB5A7800A51478 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00871528DB5A7800A51478 /* ContentView.swift */; };
 		0E00871828DB5C4500A51478 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00871728DB5C4500A51478 /* CustomSceneView.swift */; };
@@ -31,14 +30,13 @@
 		0E6384C928DD5D7D005FEA60 /* Rock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C528DD5D7D005FEA60 /* Rock.usdz */; };
 		0E6384CA28DD5D7D005FEA60 /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */; };
 		0E6384CB28DD5D7D005FEA60 /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */; };
-		0ED33A5128E5E22A0084A67E /* UIKit3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33A5028E5E22A0084A67E /* UIKit3D.swift */; };
+		0ED33A9128E6000B0084A67E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33A9028E6000B0084A67E /* ARView.swift */; };
 		0EE0E19628DB67DB00009B02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */; };
 		0EE0E19928DB685500009B02 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE0E19828DB685500009B02 /* FirebaseFirestore */; };
 		0EE0E19B28DB685500009B02 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE0E19A28DB685500009B02 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E00871028DB5A2600A51478 /* shoe.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = shoe.scn; sourceTree = "<group>"; };
 		0E00871328DB5A6600A51478 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0E00871528DB5A7800A51478 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E00871728DB5C4500A51478 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
@@ -58,12 +56,12 @@
 		0E4ED24D28E2024A00D8F4A1 /* BrandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListView.swift; sourceTree = "<group>"; };
 		0E6384BE28DD5603005FEA60 /* sceneKitUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sceneKitUIKit.swift; sourceTree = "<group>"; };
 		0E6384C028DD5728005FEA60 /* cubes_r_normals.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = cubes_r_normals.usdz; path = SnpCombine/Assets/cubes_r_normals.usdz; sourceTree = SOURCE_ROOT; };
-		0E6384C228DD5D2C005FEA60 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AirForce.usdz; path = SnpCombine/Assets/AirForce.usdz; sourceTree = SOURCE_ROOT; };
+		0E6384C228DD5D2C005FEA60 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AirForce.usdz; path = SnpCombine/AirForce.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C428DD5D7D005FEA60 /* FruitCakeSlice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = FruitCakeSlice.usdz; path = SnpCombine/Assets/FruitCakeSlice.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C528DD5D7D005FEA60 /* Rock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Rock.usdz; path = SnpCombine/Assets/Rock.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = PegasusTrail.usdz; path = SnpCombine/Assets/PegasusTrail.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = LemonMeringuePie.usdz; path = SnpCombine/Assets/LemonMeringuePie.usdz; sourceTree = SOURCE_ROOT; };
-		0ED33A5028E5E22A0084A67E /* UIKit3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit3D.swift; sourceTree = "<group>"; };
+		0ED33A9028E6000B0084A67E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -110,6 +108,7 @@
 		0E2FAC4128D88BD100025DB1 /* SnpCombine */ = {
 			isa = PBXGroup;
 			children = (
+				0E6384C228DD5D2C005FEA60 /* AirForce.usdz */,
 				0E4ED24528E1FA7100D8F4A1 /* MVVM */,
 				0E4ED24428E1FA6500D8F4A1 /* 3D */,
 				0E4ED24328E1FA4500D8F4A1 /* Assets */,
@@ -123,7 +122,6 @@
 				0E2FAC4D28D88BD200025DB1 /* LaunchScreen.storyboard */,
 				0E2FAC5028D88BD200025DB1 /* Info.plist */,
 				0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */,
-				0ED33A5028E5E22A0084A67E /* UIKit3D.swift */,
 			);
 			path = SnpCombine;
 			sourceTree = "<group>";
@@ -149,9 +147,7 @@
 		0E4ED24328E1FA4500D8F4A1 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0E00871028DB5A2600A51478 /* shoe.scn */,
 				0E6384C028DD5728005FEA60 /* cubes_r_normals.usdz */,
-				0E6384C228DD5D2C005FEA60 /* AirForce.usdz */,
 				0E6384C428DD5D7D005FEA60 /* FruitCakeSlice.usdz */,
 				0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */,
 				0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */,
@@ -164,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0E6384BE28DD5603005FEA60 /* sceneKitUIKit.swift */,
+				0ED33A9028E6000B0084A67E /* ARView.swift */,
 			);
 			path = 3D;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E00871128DB5A2600A51478 /* shoe.scn in Resources */,
 				0EE0E19628DB67DB00009B02 /* GoogleService-Info.plist in Resources */,
 				0E6384C328DD5D2C005FEA60 /* AirForce.usdz in Resources */,
 				0E2FAC4F28D88BD200025DB1 /* LaunchScreen.storyboard in Resources */,
@@ -294,8 +290,8 @@
 				0E2FAC4728D88BD100025DB1 /* ViewController.swift in Sources */,
 				0E2FAC5A28D8912E00025DB1 /* addNewTask.swift in Sources */,
 				0E4ED24E28E2024A00D8F4A1 /* BrandListView.swift in Sources */,
+				0ED33A9128E6000B0084A67E /* ARView.swift in Sources */,
 				0E2FAC4328D88BD100025DB1 /* AppDelegate.swift in Sources */,
-				0ED33A5128E5E22A0084A67E /* UIKit3D.swift in Sources */,
 				0E2FAC6228D8C5D600025DB1 /* Constants.swift in Sources */,
 				0E6384BF28DD5603005FEA60 /* sceneKitUIKit.swift in Sources */,
 				0E00871628DB5A7800A51478 /* ContentView.swift in Sources */,

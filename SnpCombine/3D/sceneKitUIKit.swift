@@ -24,8 +24,9 @@ class sceneKitUIKit: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setup3DModel()
-        fetchModels()
+        Task.init {
+            await fetchModels()
+        }
         
         view.addSubview(sceneKitView)
         sceneKitView.snp.makeConstraints { make in
@@ -33,13 +34,33 @@ class sceneKitUIKit: UIViewController {
             make.width.height.equalTo(view.snp.width)
         }
     }
+        
+    func fetchModels() async {
+        do {
+            let storage = Storage.storage().reference()
+            let modelPath = storage.child("3dmodels/AirForce.usdz")
+            let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+            let tempDirectory = URL.init(fileURLWithPath: paths, isDirectory: true)
+            let targetUrl = tempDirectory.appendingPathComponent("AirForce.usdz")
+            
+            modelPath.write(toFile: targetUrl) { (url, error) in
+                if error != nil {
+                    print("ERROR: \(error!)")
+                }else{
+                    print("modelPath.write OKAY")
+                    self.setup3DModel()
+                }
+            }
+        }
+    }
     
     private func setup3DModel() {
-        guard let urlPath = Bundle.main.url(forResource: "shoe", withExtension: "scn") else {
-            return
-        }
-        let scene = try! SCNScene(url: urlPath, options: [.checkConsistency: true])
+//        guard let urlPath = Bundle.main.url(forResource: "shoe", withExtension: "scn") else { return }
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let tempDirectory = URL.init(fileURLWithPath: paths, isDirectory: true)
+        let targetUrl = tempDirectory.appendingPathComponent("AirForce.usdz")
         
+        let scene = try! SCNScene(url: targetUrl, options: [.checkConsistency: true])
         
         let light = SCNNode()
         light.light = SCNLight()
@@ -51,16 +72,5 @@ class sceneKitUIKit: UIViewController {
         let camera = SCNNode()
         camera.camera = SCNCamera()
         scene.rootNode.addChildNode(camera)
-    }
-    
-    func fetchModels() {
-        print("download started")
-        let storageRef = Storage.storage().reference()
-        let fileRef = storageRef.child("3dmodels/AirForce.usdz")
-        fileRef.getData(maxSize: 20*1024*1024) { data, error in
-            if error == nil && data != nil{
-                
-            }
-        }
     }
 }
