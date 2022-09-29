@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = addNewTask()
 //        window?.rootViewController = ViewController()
 //        window?.rootViewController = sceneKitUIKit()
-        window?.rootViewController = BrandListView()
+//        window?.rootViewController = BrandListView()
+        window?.rootViewController = UIKit3D()
         window?.makeKeyAndVisible()
     }
 

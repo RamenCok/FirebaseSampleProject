@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		0E6384C928DD5D7D005FEA60 /* Rock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C528DD5D7D005FEA60 /* Rock.usdz */; };
 		0E6384CA28DD5D7D005FEA60 /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */; };
 		0E6384CB28DD5D7D005FEA60 /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */; };
+		0ED33A5128E5E22A0084A67E /* UIKit3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33A5028E5E22A0084A67E /* UIKit3D.swift */; };
 		0EE0E19628DB67DB00009B02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */; };
 		0EE0E19928DB685500009B02 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE0E19828DB685500009B02 /* FirebaseFirestore */; };
 		0EE0E19B28DB685500009B02 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE0E19A28DB685500009B02 /* FirebaseStorage */; };
@@ -62,6 +63,7 @@
 		0E6384C528DD5D7D005FEA60 /* Rock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Rock.usdz; path = SnpCombine/Assets/Rock.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = PegasusTrail.usdz; path = SnpCombine/Assets/PegasusTrail.usdz; sourceTree = SOURCE_ROOT; };
 		0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = LemonMeringuePie.usdz; path = SnpCombine/Assets/LemonMeringuePie.usdz; sourceTree = SOURCE_ROOT; };
+		0ED33A5028E5E22A0084A67E /* UIKit3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit3D.swift; sourceTree = "<group>"; };
 		0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				0E2FAC4D28D88BD200025DB1 /* LaunchScreen.storyboard */,
 				0E2FAC5028D88BD200025DB1 /* Info.plist */,
 				0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */,
+				0ED33A5028E5E22A0084A67E /* UIKit3D.swift */,
 			);
 			path = SnpCombine;
 			sourceTree = "<group>";
@@ -240,7 +243,7 @@
 				};
 			};
 			buildConfigurationList = 0E2FAC3A28D88BD100025DB1 /* Build configuration list for PBXProject "SnpCombine" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -292,6 +295,7 @@
 				0E2FAC5A28D8912E00025DB1 /* addNewTask.swift in Sources */,
 				0E4ED24E28E2024A00D8F4A1 /* BrandListView.swift in Sources */,
 				0E2FAC4328D88BD100025DB1 /* AppDelegate.swift in Sources */,
+				0ED33A5128E5E22A0084A67E /* UIKit3D.swift in Sources */,
 				0E2FAC6228D8C5D600025DB1 /* Constants.swift in Sources */,
 				0E6384BF28DD5603005FEA60 /* sceneKitUIKit.swift in Sources */,
 				0E00871628DB5A7800A51478 /* ContentView.swift in Sources */,
