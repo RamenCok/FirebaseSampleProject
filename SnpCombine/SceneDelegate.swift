@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = ViewController()
 //        window?.rootViewController = sceneKitUIKit()
 //        window?.rootViewController = BrandListView()
-        window?.rootViewController = ARView()
+        window?.rootViewController = sceneKitUIKit()
         window?.makeKeyAndVisible()
     }
 

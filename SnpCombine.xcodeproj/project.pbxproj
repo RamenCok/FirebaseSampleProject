@@ -30,6 +30,7 @@
 		0E6384C928DD5D7D005FEA60 /* Rock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C528DD5D7D005FEA60 /* Rock.usdz */; };
 		0E6384CA28DD5D7D005FEA60 /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C628DD5D7D005FEA60 /* PegasusTrail.usdz */; };
 		0E6384CB28DD5D7D005FEA60 /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E6384C728DD5D7D005FEA60 /* LemonMeringuePie.usdz */; };
+		0E89B38228E6D34B0051B04F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0E89B38128E6D34B0051B04F /* JGProgressHUD */; };
 		0ED33A9128E6000B0084A67E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33A9028E6000B0084A67E /* ARView.swift */; };
 		0EE0E19628DB67DB00009B02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0E19528DB67DB00009B02 /* GoogleService-Info.plist */; };
 		0EE0E19928DB685500009B02 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE0E19828DB685500009B02 /* FirebaseFirestore */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E89B38228E6D34B0051B04F /* JGProgressHUD in Frameworks */,
 				0E2FAC5828D890FC00025DB1 /* SnapKit in Frameworks */,
 				0EE0E19928DB685500009B02 /* FirebaseFirestore in Frameworks */,
 				0EE0E19B28DB685500009B02 /* FirebaseStorage in Frameworks */,
@@ -219,6 +221,7 @@
 				0E2FAC5728D890FC00025DB1 /* SnapKit */,
 				0EE0E19828DB685500009B02 /* FirebaseFirestore */,
 				0EE0E19A28DB685500009B02 /* FirebaseStorage */,
+				0E89B38128E6D34B0051B04F /* JGProgressHUD */,
 			);
 			productName = SnpCombine;
 			productReference = 0E2FAC3F28D88BD100025DB1 /* SnpCombine.app */;
@@ -251,6 +254,7 @@
 			packageReferences = (
 				0E2FAC5628D890FC00025DB1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				0EE0E19728DB685500009B02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0E89B38028E6D34B0051B04F /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 0E2FAC4028D88BD100025DB1 /* Products */;
 			projectDirPath = "";
@@ -525,6 +529,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		0E89B38028E6D34B0051B04F /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		0EE0E19728DB685500009B02 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -540,6 +552,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E2FAC5628D890FC00025DB1 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		0E89B38128E6D34B0051B04F /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E89B38028E6D34B0051B04F /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 		0EE0E19828DB685500009B02 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

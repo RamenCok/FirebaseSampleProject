@@ -12,6 +12,8 @@ import SnapKit
 
 class ARView: UIViewController, ARSCNViewDelegate {
     
+    let filename = "LemonMeringuePie.usdz"
+    
     private lazy var sceneARView: ARSCNView = {
         let view = ARSCNView()
         return view
@@ -27,7 +29,12 @@ class ARView: UIViewController, ARSCNViewDelegate {
         sceneARView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "AirForce.usdz")!
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let tempDirectory = URL.init(fileURLWithPath: paths, isDirectory: true)
+        let targetUrl = tempDirectory.appendingPathComponent("\(filename)")
+        
+        let scene = try! SCNScene(url: targetUrl, options: [.checkConsistency: true])
+//        let scene = SCNScene(named: "AirForce.usdz")!
         
         // Set the scene to the view
         sceneARView.scene = scene
@@ -44,7 +51,10 @@ class ARView: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = AROrientationTrackingConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
+//        configuration.planeDetection = .horizontal
+//        sceneARView.debugOptions = [ARSCNDebugOptions.showFeaturePoints,ARSCNDebugOptions.showWorldOrigin]
+//        sceneARView.delegate = self
 
         // Run the view's session
         sceneARView.session.run(configuration)
